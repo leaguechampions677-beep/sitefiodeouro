@@ -1,44 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Barbearia Fio de Ouro</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>FIO DE OURO</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="agendamento.html">Agendar</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+.form-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
 
-    <main class="form-container">
-        <h2>Login</h2>
-        <form id="login-form">
-            <div class="form-group">
-                <label for="email-login">E-mail:</label>
-                <input type="email" id="email-login" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="senha-login">Senha:</label>
-                <input type="password" id="senha-login" name="senha" required>
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
-        <p class="link-cadastro">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-    </main>
+.form-container h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 2rem;
+}
 
-    <footer>
-        <p>&copy; 2024 Barbearia Fio de Ouro. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+.form-container .form-group {
+    margin-bottom: 1rem;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #FFD700;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #FFD700;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #DAA520;
+}
+
+.link-cadastro, .link-login {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.link-cadastro a, .link-login a {
+    color: #FFD700;
+    text-decoration: none;
+}
